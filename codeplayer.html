@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayer Project</title>
+    <script src="jquery.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+           
+        }
+        #header{
+            height: 36px;
+            background-color: #EDEDED;
+        }
+        #container{
+           margin: 0 auto;
+            width:300px;
+            padding: 3px;
+
+        }
+        .toggle{
+            float: left;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        #logo{
+            font-weight: bold;
+            float: left;
+            margin: 5px;
+        }
+        #output{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #html{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .toggle:hover{
+            cursor: pointer;
+        }
+        .hight{
+            background-color:#F5F9FF;
+        }
+        .active{
+            background-color: lightskyblue;
+        }
+
+        .hovered {
+            background-color:#EBF3FF ;
+        }
+        .ho{
+            background-color: #BEBEBE;
+        }
+        .hidden{
+            display: none;
+        }
+        .pannel{
+           float: left;
+        }
+       iframe{
+        border: none;
+       }
+       textarea{
+        resize: none;
+        border-top: none;
+       }
+    </style>
+ </head>
+ <body>
+    <div id="header">
+        <div id="logo">
+         CodePlayer
+        </div>
+       <div id="container">
+         <div class="toggle" id="html">HTML</div>
+         <div class="toggle" id="css">CSS</div>
+         <div class="toggle" id="javascript">Javascript</div>
+         <div class="toggle" id="output">Output</div>
+       </div>
+    </div>
+    <div id="body">
+        <textarea class="panel hidden" id="htmlpanel"></textarea>
+        <textarea id="csspanel"class="panel hidden"></textarea>
+        <textarea id="javascriptpanel" class="panel hidden"></textarea>
+        <iframe class="panel hidden" id="outputpanel"></iframe>
+    </div>
+  <script defer src="codeplayer.js"></script>
+
+       
+         
+    </script>
+</body>
+</html>
